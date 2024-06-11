@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "229068033956",
+    "project_id": "hotspotapp-38bdb",
+    "storage_bucket": "hotspotapp-38bdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229068033956:android:56a5b64efe585aa1893b31",
+        "android_client_info": {
+          "package_name": "com.example.hotspotapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXUdTw_ZNQhhs8x-L4xDSxvgnHOZu6LaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

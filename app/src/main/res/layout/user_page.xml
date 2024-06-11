@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/user_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserPage">
+
+    <SeekBar
+        android:id="@+id/proximity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:layout_margin="16dp"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/proximityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proximity: 0"
+        android:layout_below="@id/proximity"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp" />
+
+    <EditText
+        android:id="@+id/groupSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter group size"
+        android:layout_margin="16dp"
+        android:layout_below="@id/proximityTextView"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/showLocationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See Map"
+        android:layout_below="@id/groupSize"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/venueName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter venue name"
+        android:layout_below="@id/showLocationButton"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/navigateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a Venue"
+        android:layout_below="@id/venueName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/> <!-- This is a test ad unit ID provided by Google -->
+
+</RelativeLayout>
